@@ -475,7 +475,7 @@ all_k_stab_df <- do.call(rbind, all_k_stab_list)
 robust_summary <- extract_immutable_clusters(all_k_stab_df, threshold_jaccard = 0.85)
 print(robust_summary)
 
-write.table(robust_summary, 'robust_summary.txt',
+write.table(robust_summary, 'стабильные_кластеры_сводные_результаты.txt',
 			col.names = T, row.names = F, quote = F, sep = '\t')
 
 
